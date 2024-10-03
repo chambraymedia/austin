@@ -29,25 +29,25 @@
             line-height: 1.5;
         }
         .columns {
-            display: flex; /* Creates a flex container for the columns */
-            justify-content: space-between; /* Distributes space between the columns */
-            margin-top: 20px; /* Adds space above the columns */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
         }
         .column {
-            flex: 1; /* Each column takes equal width */
-            margin-right: 20px; /* Adds space between the columns */
+            flex: 1;
+            margin-right: 20px;
         }
         .column:last-child {
-            margin-right: 0; /* Removes margin from the last column */
+            margin-right: 0;
         }
         a {
-            display: block; /* Makes the links block elements */
-            margin: 10px 0; /* Adds space between links */
+            display: block;
+            margin: 10px 0;
             color: #0066cc;
             text-decoration: none;
         }
         a:hover {
-            text-decoration: underline; /* Underline links on hover */
+            text-decoration: underline;
         }
         .logo {
             position: absolute;
@@ -58,6 +58,13 @@
             width: 50px; /* Adjust size as needed */
             height: auto;
         }
+        .menu {
+            margin-top: 70px; /* Add space below the logo */
+            margin-left: 20px; /* Align with the logo */
+        }
+        .menu a {
+            margin-bottom: 10px; /* Space between menu links */
+        }
     </style>
 </head>
 <body>
@@ -65,25 +72,30 @@
         <img src="6iCt3VGHyvTJDeqQdxYPGm.png" alt="Your Logo"> <!-- Replace "logo.png" with your image file -->
     </div>
 
+    <div class="menu">
+        <h3>Menu</h3>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="resume.pdf" target="_blank">Resume</a> <!-- Link to your resume PDF -->
+        <a href="contact.html">Contact</a> <!-- Link to your contact page -->
+    </div>
+
     <div class="content">
-        <h1>Austin Leavitt</h1> <!-- Main headline -->
-        <h2>Copywriter and Marketing Strategist. Creative Director at Chambray Media.</h2> <!-- Subhead -->
-        <p>Check out my best work and some of my favorite writings.</p> <!-- Brief copy -->
+        <h1>Jack Manson</h1>
+        <h2>Copywriter</h2>
+        <p>Thanks for checking out my work! I specialize in crafting compelling copy that engages audiences and drives results. Feel free to explore my essays and reach out if you have any questions.</p>
 
         <div class="columns">
             <div class="column">
-                <h3>Portfolio</h3> <!-- Column for portfolio links -->
-                <a href="portfolio1.html">Saas Website: Yesware</a>
-                <a href="portfolio2.html">SaaS Site: GoTo Connect</a>
-                <a href="portfolio3.html">Checkout UX: Grashopper</a>
-                <!-- Add more portfolio links as needed -->
+                <h3>Portfolio</h3>
+                <a href="portfolio1.html">Portfolio Piece 1</a>
+                <a href="portfolio2.html">Portfolio Piece 2</a>
+                <a href="portfolio3.html">Portfolio Piece 3</a>
             </div>
             <div class="column">
-                <h3>Essays</h3> <!-- Column for essay links -->
-                <a href="essay1.html">Brand of the Week: Hallow</a>
-                <a href="essay2.html">Henry V would have been a badass copywriter</a>
-                <a href="essay3.html">Why Authenticity > Tactics</a>
-                <!-- Add more essay links as needed -->
+                <h3>Essays</h3>
+                <a href="essay1.html">Essay 1: Title of Your First Essay</a>
+                <a href="essay2.html">Essay 2: Title of Your Second Essay</a>
+                <a href="essay3.html">Essay 3: Title of Your Third Essay</a>
             </div>
         </div>
     </div>
