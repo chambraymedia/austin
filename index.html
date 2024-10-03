@@ -3,29 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul Graham Style Website</title>
+    <title>Your Name - Copywriter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Merriweather, serif;
+            font-family: 'Merriweather', serif;
             margin: 20px;
             background-color: #fff;
             color: #333;
         }
-        h1, h2 {
+        h1 {
+            font-size: 36px;
             color: #1a1a1a;
+        }
+        h2 {
+            font-size: 24px;
+            color: #666;
         }
         .content {
             max-width: 800px;
             margin: auto;
         }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .columns {
+            display: flex; /* Creates a flex container for the columns */
+            justify-content: space-between; /* Distributes space between the columns */
+            margin-top: 20px; /* Adds space above the columns */
+        }
+        .column {
+            flex: 1; /* Each column takes equal width */
+            margin-right: 20px; /* Adds space between the columns */
+        }
+        .column:last-child {
+            margin-right: 0; /* Removes margin from the last column */
+        }
         a {
+            display: block; /* Makes the links block elements */
+            margin: 10px 0; /* Adds space between links */
             color: #0066cc;
             text-decoration: none;
         }
         a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* Underline links on hover */
         }
-        /* Add styles for the logo */
         .logo {
             position: absolute;
             top: 20px;
@@ -38,21 +61,31 @@
     </style>
 </head>
 <body>
-    <!-- Logo -->
     <div class="logo">
-        <img src="6iCt3VGHyvTJDeqQdxYPGm.png" alt="Austin Leavitt logo">
+        <img src="logo.png" alt="Your Logo"> <!-- Replace "logo.png" with your image file -->
     </div>
 
     <div class="content">
-       <h1>Austin Leavit</h1> <!-- Main headline -->
-        <h2>Copy writer</h2> <!-- Subhead -->
-        <p>Check out my best work - and explore some of the thoughts I've been compelled to put to paper.</p> <!-- Brief copy -->
-    </div>
-        <ul>
-            <li><a href="essay1.html">Essay 1: Title of Your First Essay</a></li>
-            <li><a href="essay2.html">Essay 2: Title of Your Second Essay</a></li>
-            <!-- Add more essays as needed -->
-        </ul>
+        <h1>Jack Manson</h1> <!-- Main headline -->
+        <h2>Copywriter</h2> <!-- Subhead -->
+        <p>Thanks for checking out my work! I specialize in crafting compelling copy that engages audiences and drives results. Feel free to explore my essays and reach out if you have any questions.</p> <!-- Brief copy -->
+
+        <div class="columns">
+            <div class="column">
+                <h3>Portfolio</h3> <!-- Column for portfolio links -->
+                <a href="portfolio1.html">Portfolio Piece 1</a>
+                <a href="portfolio2.html">Portfolio Piece 2</a>
+                <a href="portfolio3.html">Portfolio Piece 3</a>
+                <!-- Add more portfolio links as needed -->
+            </div>
+            <div class="column">
+                <h3>Essays</h3> <!-- Column for essay links -->
+                <a href="essay1.html">Essay 1: Title of Your First Essay</a>
+                <a href="essay2.html">Essay 2: Title of Your Second Essay</a>
+                <a href="essay3.html">Essay 3: Title of Your Third Essay</a>
+                <!-- Add more essay links as needed -->
+            </div>
+        </div>
     </div>
 </body>
 </html>
