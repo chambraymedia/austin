@@ -11,7 +11,13 @@
             margin: 20px;
             background-color: #fff;
             color: #333;
-            position: relative; /* Added for positioning child elements */
+            display: flex; /* Flexbox for layout */
+        }
+        .sidebar {
+            width: 200px; /* Fixed width for sidebar */
+            padding-right: 20px; /* Space between sidebar and content */
+            position: sticky; /* Keep sidebar fixed on scroll */
+            top: 20px; /* Positioning from the top */
         }
         h1 {
             font-size: 36px;
@@ -22,8 +28,7 @@
             color: #666;
         }
         .content {
-            max-width: 800px;
-            margin: auto;
+            flex-grow: 1; /* Take up remaining space */
         }
         p {
             font-size: 18px;
@@ -51,43 +56,35 @@
             text-decoration: underline;
         }
         .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
+            margin-bottom: 20px; /* Space below logo */
         }
         .logo img {
             width: 50px; /* Adjust size as needed */
             height: auto;
         }
         .menu {
-            position: absolute; /* Positioning relative to the body */
-            top: 80px; /* Adjusted to align with the logo */
-            left: 20px; /* Aligns with the logo */
-            text-align: center; /* Centers the menu items */
+            text-align: left; /* Align menu links to the left */
         }
-        .menu a {
-            margin-bottom: 10px; /* Space between menu links */
-        }
-        /* Adjust main content positioning */
-        .main-content {
-            margin-left: 80px; /* Align with logo and menu */
-            margin-top: 100px; /* Reducing space above content */
+        .menu h3 {
+            margin-top: 0; /* Remove margin above menu heading */
         }
     </style>
 </head>
 <body>
-    <div class="logo">
-        <img src="6iCt3VGHyvTJDeqQdxYPGm.png" alt="Your Logo"> <!-- Replace "logo.png" with your image file -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo.png" alt="Your Logo"> <!-- Replace "logo.png" with your image file -->
+        </div>
+
+        <div class="menu">
+            <h3>Menu</h3>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="resume.pdf" target="_blank">Resume</a> <!-- Link to your resume PDF -->
+            <a href="contact.html">Contact</a> <!-- Link to your contact page -->
+        </div>
     </div>
 
-    <div class="menu">
-        <h3>Menu</h3>
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-        <a href="resume.pdf" target="_blank">Resume</a> <!-- Link to your resume PDF -->
-        <a href="contact.html">Contact</a> <!-- Link to your contact page -->
-    </div>
-
-    <div class="content main-content">
+    <div class="content">
         <h1>Jack Manson</h1>
         <h2>Copywriter</h2>
         <p>Thanks for checking out my work! I specialize in crafting compelling copy that engages audiences and drives results. Feel free to explore my essays and reach out if you have any questions.</p>
