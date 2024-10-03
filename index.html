@@ -11,6 +11,7 @@
             margin: 20px;
             background-color: #fff;
             color: #333;
+            position: relative; /* Added for positioning child elements */
         }
         h1 {
             font-size: 36px;
@@ -59,11 +60,18 @@
             height: auto;
         }
         .menu {
-            margin-top: 70px; /* Add space below the logo */
-            margin-left: 20px; /* Align with the logo */
+            position: absolute; /* Positioning relative to the body */
+            top: 80px; /* Adjusted to align with the logo */
+            left: 20px; /* Aligns with the logo */
+            text-align: center; /* Centers the menu items */
         }
         .menu a {
             margin-bottom: 10px; /* Space between menu links */
+        }
+        /* Adjust main content positioning */
+        .main-content {
+            margin-left: 80px; /* Align with logo and menu */
+            margin-top: 100px; /* Reducing space above content */
         }
     </style>
 </head>
@@ -79,7 +87,7 @@
         <a href="contact.html">Contact</a> <!-- Link to your contact page -->
     </div>
 
-    <div class="content">
+    <div class="content main-content">
         <h1>Jack Manson</h1>
         <h2>Copywriter</h2>
         <p>Thanks for checking out my work! I specialize in crafting compelling copy that engages audiences and drives results. Feel free to explore my essays and reach out if you have any questions.</p>
